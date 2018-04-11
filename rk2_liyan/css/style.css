@@ -22,8 +22,8 @@ html,
 }
 
 .wrap header {
-  flex-shrink: 0;
   height: 1rem;
+  flex-shrink: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,15 +34,14 @@ html,
 }
 
 .wrap section nav ul {
-  display: flex;
   height: 1rem;
-  text-align: center;
-  align-items: center;
+  display: flex;
 }
 
 .wrap section nav ul li {
   width: 25%;
   text-align: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
 }
@@ -51,22 +50,18 @@ html,
   color: red;
 }
 
-.wrap section .con h5 {
-  width: 100%;
+.wrap section .con {
   text-align: center;
-  line-height: 2rem;
 }
 
 .wrap footer {
   flex-shrink: 0;
-  height: 1rem;
-  display: flex;
-  text-align: center;
-  align-items: center;
 }
 
 .wrap footer span {
+  height: 1rem;
   width: 50%;
   border: 1px solid #ccc;
   text-align: center;
+  line-height: 1rem;
 }

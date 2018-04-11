@@ -22,27 +22,28 @@
         </header>
         <section>
             <nav>
-                <ul id="nav">
-                    <li class="active"><span class="iconfont icon-bofang1"></span><span>电源</span></li>
-                    <li><span class="iconfont icon-shouye"></span><span>首页</span></li>
-                    <li><span class="iconfont icon-gengduo-2"></span><span>菜单</span></li>
+                <ul id="list">
+                    <li class="active"><span class="iconfont icon-tuichu"></span><span>电源</span></li>
+                    <li><span class="iconfont icon-iconhuidaoshouye"></span><span>首页</span></li>
+                    <li><span class="iconfont icon-shouqi-01"></span><span>菜单</span></li>
                     <li><span class="iconfont icon-fengjing"></span><span>截屏</span></li>
                 </ul>
             </nav>
             <div class="con">
-                <h5>滑动控制上下左右，点击确定</h5>
-                <h5>长按调节电视音量</h5>
+                <h5>控制上下左右，点击刷新</h5>
+                <h5>长按调节电量</h5>
             </div>
         </section>
         <footer>
-            <span class="iconfont icon-jia"></span><span class="iconfont icon-fenxiang3"></span>
+            <span class="iconfont icon-gengduo-2"></span><span class="iconfont icon-querenwancheng"></span>
         </footer>
     </div>
 </body>
 <script src="./js/zepto.js"></script>
 <script>
-    $('#nav').on('click', 'li', function() {
+    $('#list').on('click', 'li', function() {
         $(this).css('color', 'red').siblings().css('color', 'black');
+        $('.con').html($(this).text());
     });
 </script>
 
